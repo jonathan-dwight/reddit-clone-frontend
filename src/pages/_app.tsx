@@ -13,7 +13,8 @@ const client = createClient({
 
 import theme from "../theme";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: any) {
+    // he ripped out the colormode provider
     return (
         <Provider value={client}>
             <ThemeProvider theme={theme}>
